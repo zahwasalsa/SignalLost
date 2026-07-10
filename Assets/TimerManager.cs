@@ -23,7 +23,8 @@ public class TimerManager : MonoBehaviour
                 timeRemaining = 0;
                 timerRunning = false;
 
-                Debug.Log("GAME OVER");
+                // Ganti Debug.Log jadi trigger Game Over sungguhan
+                FindObjectOfType<GameOverManager>().TriggerGameOver();
             }
         }
     }
